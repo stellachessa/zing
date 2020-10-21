@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>piccipicci studio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <style>
+      .hover-title {
+    display: inline;
+    pointer-events: auto;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hover-image {
+    visibility: hidden;
+}
+
+body:not(.mobile) .hover-title:hover + .hover-image {
+    visibility: visible;
+    pointer-events: none;
+}
+
+.hover-image {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+/* Change width and height to scale images */
+    width: 90vw;
+    height: 90vh;
+    z-index: 1;
+}
+
+.hover-image img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 0;
+   
+}
+    </style>
+  </head>
+  <body>
+    <section class="hero has-background-grey-darker is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar has-background-light">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="img/piccipiccistudio2.png" alt="Logo">
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenuHeroA" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item is-active">
+                  home
+                </a>
+                <a class="navbar-item">
+                  about
+                </a>
+                <a class="navbar-item">
+                  servizi
+                </a>
+                <a class="navbar-item">
+                  portfolio
+                </a>
+                <a class="navbar-item">
+                  contatti
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="hero-title has-text-white-ter">
+            We design, develop and create digital solutions and a 
+            <div class="hover-title">little more...</div>
+<div class="hover-image"><img src="img/beavis.gif"></div>
+          </h1>
+        </div>
+      </div>
+    
+    </section>
+    
+  <section class="section is-large">
+    <div class="container">
+      <h1 class="title">
+        About
+      </h1>
+      <p class="mt-4 subtitle">
+        Amiamo il nostro lavoro e con la stessa <b>passione</b> degli inizi disegniamo e progettiamo per le persone mettendole sempre al primo posto.‍<br><br>
+        Con <b>empatia</b> seguiamo i nostri clienti nel processo di comprensione delle loro necessità trasformandole in <b>possibilità</b>, detta così sembra una <b>magia</b> e forse lo è, ma a noi piace chiamarla: <b>costanza</b>, <b>determinazione</b>, <b>impegno</b> e <b>amore</b>.‍<br><br>
+        Siamo un <b>team</b> dalle più svariate <b>competenze</b> crediamo che lavorare in gruppo, sia la scelta migliore che si possa fare: ci si compensa, ci si <b>aiuta</b> e ci porta continuamente a spostare l'asticella ai nostri <b>limiti</b> e poterli <b>superare</b>. Non amiamo le comfort zone, vogliamo che ogni progetto sia diverso.<br><br>
+        Ci piace <b>sognare</b> è vero ma non ci piace fare <b>promesse</b> che non possiamo <b>mantenere</b>.
+      </p>
+    </div>
+  </section>
+  <section class="section has-background-grey-darker is-large">
+    <div class="container">
+      <h1 class="hero-title has-text-white-ter">
+        I nostri servizi : sviluppo <u>siti web</u>, <u>e-commerce</u>, <u>app</u>, <u>web design</u>, progettazione <u>loghi</u>, <u>seo</u>, <u>grafiche per materiale pubblicitario</u>...
+      </h1>
+    </div>
+  </section>
+  <section class="section is-large">
+    <div class="container">
+      <h1 class="title">
+        Portfolio
+      </h1>
+      <div class="columns is-multiline is-mobile">
+        <div class="column is-half">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                
+                <div class="media-content">
+                  <p class="title is-4">John Smith</p>
+                </div>
+              </div>
+          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <a href="#">#css</a> <a href="#">#responsive</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                
+                <div class="media-content">
+                  <p class="title is-4">John Smith</p>
+                </div>
+              </div>
+          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <a href="#">#css</a> <a href="#">#responsive</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                
+                <div class="media-content">
+                  <p class="title is-4">John Smith</p>
+                  
+                </div>
+              </div>
+          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <a href="#">#css</a> <a href="#">#responsive</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+               
+                <div class="media-content">
+                  <p class="title is-4">John Smith</p>
+                </div>
+              </div>
+          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <a href="#">#css</a> <a href="#">#responsive</a>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h1 class="title">
+        Contatti
+      </h1>
+      <p class="mt-4 subtitle">
+        Potrebbe essere un nuovo successo, non essere timido, scrivici!<br>
+        Magari ci stringeremo la mano e ci conosceremo davanti a qualcosa da bere.
+      </p>
+      <div class="field-body">
+        <div class="field">
+          <label class="label">Nome</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input">
+          </div>
+        </div>
+        
+        <div class="field">
+          <label class="label">Cognome</label>
+          <div class="control">
+            <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+        
+          </div>
+          <!--<p class="help is-success">This username is available</p>-->        
+        </div>
+      </div>
+      <div class="field-body">
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+       
+        </div>
+        <!--<p class="help is-danger">This email is invalid</p>-->
+      </div>
+      
+      <div class="field">
+        <label class="label">Subject</label>
+        <div class="control">
+          <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+        </div>
+      </div>
+    </div>
+      
+      <div class="field">
+        <label class="label">Messaggio</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Autorizzo il trattamento dei miei dati per le finalità e modalità indicate nel Consenso sulla <a href="#">Privacy Policy </a> e <a href="#">Cookie Policy</a>
+          </label>
+        </div>
+      </div>
+    
+      
+      <div class="field">
+        <div class="control">
+          <button class="button is-primary">Invia</button>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <img src="img/piccipiccistudio2.png"  width="150px" alt="Logo"><br>
+        @Copyright 2020 - <a>pps@gmail.com</a><br>
+        P.IVA 15565757748
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
+    });
+  </script>
+  </body>
+</html>

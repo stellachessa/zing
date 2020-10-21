@@ -1,0 +1,9 @@
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.hero-title{
+ font-size: 70px;
+ font-weight: 700;
+ line-height: 1.3;
+}
